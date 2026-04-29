@@ -13,10 +13,48 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\h">
+      <UniqueIdentifier>{59deb7f5-115b-4861-a14c-a9aae6406288}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\cpp">
+      <UniqueIdentifier>{18861a15-d055-4c83-819c-46f656e36262}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="PhysicsWorld.cpp">
+      <Filter>Source Files\cpp</Filter>
     </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>Source Files\cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files\cpp</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="PhysicsObject.h">
+      <Filter>Source Files\h</Filter>
+    </ClInclude>
+    <ClInclude Include="BoxObject.h">
+      <Filter>Source Files\h</Filter>
+    </ClInclude>
+    <ClInclude Include="CircleObject.h">
+      <Filter>Source Files\h</Filter>
+    </ClInclude>
+    <ClInclude Include="Projectile.h">
+      <Filter>Source Files\h</Filter>
+    </ClInclude>
+    <ClInclude Include="InputManager.h">
+      <Filter>Source Files\h</Filter>
+    </ClInclude>
+    <ClInclude Include="PhysicsWorld.h">
+      <Filter>Source Files\h</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.h">
+      <Filter>Source Files\h</Filter>
+    </ClInclude>
+    <ClInclude Include="Ground.h">
+      <Filter>Source Files\h</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
