@@ -1,18 +1,43 @@
 #pragma once
 
-#include "PhysicsWorld.h"
-#include "Bridge.h"
-#include "PlayerBox.h"
+#include "raylib.h"
+#include <box2d.h>
+#include <vector>
+
+#include "Projectile.h"
+#include "Target.h"
+#include "UI.h"
+#include "ContactListener.h"
 
 class Game
 {
 private:
 
-    PhysicsWorld* physicsWorld;
+    static const int SCREEN_WIDTH = 600;
+    static const int SCREEN_HEIGHT = 600;
 
-    Bridge* bridge;
+    ContactListener listener;
 
-    PlayerBox* player;
+    b2World* world;
+
+
+    b2Body* ground;
+
+    Projectile* projectile;
+
+    std::vector<Target*> targets;
+
+    UI ui;
+
+    int score;
+
+    bool win;
+
+    void CreateGround();
+
+    void CreateTargets();
+
+    void Reset();
 
 public:
 
@@ -25,6 +50,4 @@ public:
     void Update();
 
     void Draw();
-
-    void Reset();
 };

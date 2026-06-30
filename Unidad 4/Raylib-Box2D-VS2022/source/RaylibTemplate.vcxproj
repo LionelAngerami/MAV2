@@ -18,6 +18,24 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ContactListener.cpp" />
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="PhysicsUtils.cpp" />
+    <ClCompile Include="Projectile.cpp" />
+    <ClCompile Include="Target.cpp" />
+    <ClCompile Include="UI.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BodyData.h" />
+    <ClInclude Include="ContactListener.h" />
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="PhysicsUtils.h" />
+    <ClInclude Include="Projectile.h" />
+    <ClInclude Include="Target.h" />
+    <ClInclude Include="UI.h" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
@@ -152,21 +170,6 @@ xcopy "$(SolutionDir)..\lib\vld\64-bit\Microsoft.DTfW.DHL.manifest" "$(OutDir)" 
       <AdditionalDependencies>raylib.lib;winmm.lib;box2d.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="Bridge.cpp" />
-    <ClCompile Include="Game.cpp" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="PhysicsUtils.cpp" />
-    <ClCompile Include="PhysicsWorld.cpp" />
-    <ClCompile Include="PlayerBox.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Bridge.h" />
-    <ClInclude Include="Game.h" />
-    <ClInclude Include="PhysicsUtils.h" />
-    <ClInclude Include="PhysicsWorld.h" />
-    <ClInclude Include="PlayerBox.h" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

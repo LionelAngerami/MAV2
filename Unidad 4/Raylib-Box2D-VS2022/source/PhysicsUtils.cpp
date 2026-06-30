@@ -4,8 +4,7 @@ void DrawPhysicsBox(const PhysicsBox& box)
 {
     b2Vec2 pos = box.body->GetPosition();
 
-    float angle =
-        box.body->GetAngle() * RAD2DEG;
+    float angle = box.body->GetAngle() * RAD2DEG;
 
     Rectangle rect =
     {
